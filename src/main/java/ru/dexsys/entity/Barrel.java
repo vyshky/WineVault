@@ -31,6 +31,6 @@ public class Barrel {
         }
         return Paint.Cyan(alcohol +
                 ", size=" + size +
-                ", currentFiling=" + currentFiling) + '}';
+                ", currentFiling=" + currentFiling);
     }
 }
