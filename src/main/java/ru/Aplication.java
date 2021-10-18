@@ -36,10 +36,12 @@ public class Aplication {
 
         // 3  Достать все бочки из погреба. Погреб остаётся после этого пустым
         BarrelStorageService storageService2 = new BarrelStorageService();
+        BarrelStorageService storageService3 = new BarrelStorageService();
         // До перемещения
         //
         System.out.println(Paint.cyan("StorageService   - ") + storageService);
         storageService2.moveBarrels(storageService);
+        storageService2.moveBarrels(storageService3);
         // После перемещения
         // System.out.println(storageService); // Ошибка : Склад Пуст
 

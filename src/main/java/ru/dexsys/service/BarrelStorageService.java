@@ -29,7 +29,9 @@ public class BarrelStorageService {
     public void moveBarrels(BarrelStorageService storage) {
         if (storage == null) throw new NullPointerException("Указатель на null");
         if (this == storage) throw new PointerMatchesException("Указатель на склад совпадает с текущим");
-        this.barrels = new HashMap<>(storage.barrels);
+        if (this.barrels.isEmpty()) {
+            this.barrels = new HashMap<>(storage.barrels);
+        } else this.barrels.putAll(storage.barrels);
         storage.barrels.clear();
     }
 
