@@ -1,20 +1,20 @@
-package ru.dexsys.Paint;
+package ru.dexsys.paint;
 
 public class Paint {
 
-    public static String Green(String str) {
+    public static String green(String str) {
         return "\u001B[32m" + str + "\u001B[0m";
     }
 
-    public static String Red(String str) {
+    public static String red(String str) {
         return "\u001B[31m" + str + "\u001B[0m";
     }
 
-    public static String Purple(String str) {
+    public static String purple(String str) {
         return "\u001B[35m" + str + "\u001B[0m";
     }
 
-    public static String Cyan(String str) {
+    public static String cyan(String str) {
         return "\u001B[36m" + str + "\u001B[0m";
     }
 }

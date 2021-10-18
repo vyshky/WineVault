@@ -3,7 +3,7 @@ package ru.dexsys.entity;
 
 import lombok.Getter;
 import lombok.Setter;
-import ru.dexsys.Paint.Paint;
+import ru.dexsys.paint.Paint;
 
 @Getter
 @Setter
@@ -29,7 +29,7 @@ public class Barrel {
         if (this == null) {
             throw new NullPointerException();
         }
-        return Paint.Cyan(alcohol +
+        return Paint.cyan(alcohol +
                 ", size=" + size +
                 ", currentFiling=" + currentFiling);
     }

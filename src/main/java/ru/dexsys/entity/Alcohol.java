@@ -9,6 +9,7 @@ import lombok.ToString;
 @Getter
 public abstract class Alcohol {
     protected final double alcoholByVolume;
+
     @Override
     public abstract String toString();
 }

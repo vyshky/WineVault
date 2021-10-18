@@ -1,6 +1,6 @@
 package ru;
 
-import ru.dexsys.Paint.Paint;
+import ru.dexsys.paint.Paint;
 import ru.dexsys.entity.Barrel;
 import ru.dexsys.entity.Whiskey;
 import ru.dexsys.entity.Wine;
@@ -23,7 +23,7 @@ public class Aplication {
         storageService.saveBarrel(barrel3);
         storageService.saveBarrel(barrel4);
 
-        System.out.println(Paint.Cyan("StorageService   - ") + storageService);
+        System.out.println(Paint.cyan("StorageService   - ") + storageService);
 
         // 1  достать бочку по этикетке.Если такой бочки нет - выдать ошибку с подробным описанием
         //    после этого данная бочка в погребе, соответственно, исчезает
@@ -38,18 +38,18 @@ public class Aplication {
         BarrelStorageService storageService2 = new BarrelStorageService();
         // До перемещения
         //
-        System.out.println(Paint.Cyan("StorageService   - ") + storageService);
+        System.out.println(Paint.cyan("StorageService   - ") + storageService);
         storageService2.moveBarrels(storageService);
         // После перемещения
         // System.out.println(storageService); // Ошибка : Склад Пуст
 
-        System.out.println(Paint.Cyan("StorageService 2 - ") + storageService2);
+        System.out.println(Paint.cyan("StorageService 2 - ") + storageService2);
 
         // 4) Выдать список всех этикеток (соотвественно, погреб не изменяется после этого)
-        System.out.println(Paint.Purple("Lables : " + storageService2.getLables()));
+        System.out.println(Paint.purple("Lables : " + storageService2.getLables()));
     }
 
     public static void showBarrelLabel(Barrel barrel) {
-        System.out.println(Paint.Red(barrel.getLabel()) + " = " + barrel);
+        System.out.println(Paint.red(barrel.getLabel()) + " = " + barrel);
     }
 }
